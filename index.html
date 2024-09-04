@@ -58,21 +58,21 @@
         </p>
       </div>
     </div>
+
+    <script>
+      document.getElementById("search").addEventListener("keyup", function () {
+        let filter = this.value.toLowerCase();
+        let teamMembers = document.getElementsByClassName("team-member");
+
+        for (let i = 0; i < teamMembers.length; i++) {
+          let name = teamMembers[i].getElementsByTagName("h3")[0];
+          if (name.innerHTML.toLowerCase().indexOf(filter) > -1) {
+            teamMembers[i].style.display = "";
+          } else {
+            teamMembers[i].style.display = "none";
+          }
+        }
+      });
+    </script>
   </body>
 </html>
-
-<script>
-  document.getElementById("search").addEventListener("keyup", function () {
-    let filter = this.value.toLowerCase();
-    let teamMembers = document.getElementsByClassName("team-member");
-
-    for (let i = 0; i < teamMembers.length; i++) {
-      let name = teamMembers[i].getElementsByTagName("h3")[0];
-      if (name.innerHTML.toLowerCase().indexOf(filter) > -1) {
-        teamMembers[i].style.display = "";
-      } else {
-        teamMembers[i].style.display = "none";
-      }
-    }
-  });
-</script>
