@@ -1,6 +1,6 @@
 # DevOpsLabProject
-Overview<br/>
 
+Overview<br/>
 
 Features<br/>
 Team Members List<br/>
@@ -35,4 +35,4 @@ LinkedIn Profile: https://www.linkedin.com/in/kratika-agrawal-3bb949325/
 
 Anushkaa Bansal
 Role: Member C - Documentation
-LinkedIn Profile: https://www.linkedin.com/in/niharika-aggarwal-7634502a9/ 
+LinkedIn Profile: https://www.linkedin.com/in/anushkaa-bansal-9879432a8/
