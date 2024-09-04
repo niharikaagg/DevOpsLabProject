@@ -16,7 +16,7 @@ HTML5<br/>
 CSS3<br/>
 File Structure<br/>
 index.html: The main HTML file<br/>
-styles.css: Custom CSS styles (not included in this repository)
+styles.css: Custom CSS styles
 <br/>Getting Started<br/>
 Open index.html in a web browser
 <br/>View the list of team members and click on their LinkedIn profile links
