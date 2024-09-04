@@ -17,13 +17,13 @@ CSS3<br/>
 File Structure<br/>
 index.html: The main HTML file<br/>
 styles.css: Custom CSS styles (not included in this repository)
-Getting Started<br/>
+<br/>Getting Started<br/>
 Open index.html in a web browser
-View the list of team members and click on their LinkedIn profile links
+<br/>View the list of team members and click on their LinkedIn profile links
 File Contents
 <br/>
 The file currently lists the following team members:
-
+<br/>
 Niharika Aggarwal
 Role: Member A - Initial Setup
 LinkedIn Profile: https://www.linkedin.com/in/niharika-aggarwal-7634502a9/
