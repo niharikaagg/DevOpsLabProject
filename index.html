@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team LinkedIn</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Know Our Team</h1>
-    <div>
-      <div>
+    <input
+      type="text"
+      id="search"
+      placeholder="Search team member by name..."
+    />
+    <div class="team-container">
+      <div class="team-member">
         <h3>Name: Niharika Aggarwal</h3>
         <h4>Role: Member A - Initial Setup</h4>
         <a
@@ -17,9 +22,14 @@
           target="_blank"
           >Visit my LinkedIn</a
         >
+        <p class="more-details">
+          Niharika Aggarwal: Experienced in project setup, specializes in
+          setting up project environments and ensuring smooth initial
+          deployment.
+        </p>
       </div>
 
-      <div>
+      <div class="team-member">
         <h3>Name: Kratika Agrawal</h3>
         <h4>Role: Member B - Add Functionality</h4>
         <a
@@ -27,9 +37,13 @@
           target="_blank"
           >Visit my LinkedIn</a
         >
+        <p class="more-details">
+          Kratika Agrawal: Focused on adding and refining functionalities.
+          Expertise in full stack development and functional integration.
+        </p>
       </div>
 
-      <div>
+      <div class="team-member">
         <h3>Name: Anushka Bansal</h3>
         <h4>Role: Member C - Documentation</h4>
         <a
@@ -37,7 +51,28 @@
           target="_blank"
           >Visit my LinkedIn</a
         >
+        <p class="more-details">
+          Anushka Bansal: Managed comprehensive documentation. Skilled in
+          technical writing and ensuring all project aspects are
+          well-documented.
+        </p>
       </div>
     </div>
+
+    <script>
+      document.getElementById("search").addEventListener("keyup", function () {
+        let filter = this.value.toLowerCase();
+        let teamMembers = document.getElementsByClassName("team-member");
+
+        for (let i = 0; i < teamMembers.length; i++) {
+          let name = teamMembers[i].getElementsByTagName("h3")[0];
+          if (name.innerHTML.toLowerCase().indexOf(filter) > -1) {
+            teamMembers[i].style.display = "";
+          } else {
+            teamMembers[i].style.display = "none";
+          }
+        }
+      });
+    </script>
   </body>
 </html>
